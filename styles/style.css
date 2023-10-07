@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bai Jamjuree";
+}
+
+header {
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+header > div {
+  width: 40%;
+  padding-top: 120px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+header > div > div {
+  margin-bottom: 40px;
+}
+header > div > div img {
+  width: 80px;
+}
+header > div > div h1 {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+header > div > div p {
+  color: hsl(201, 11%, 66%);
+  line-height: 25px;
+  font-size: 18px;
+}
+header > div > div .btn {
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+header > div > div .btn-vert {
+  background-color: hsl(171, 66%, 44%);
+  margin-right: 10px;
+}
+header > div > div .btn-blue {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+.btn-vert {
+  background-color: hsl(171, 66%, 44%);
+  margin-right: 10px;
+}
+.btn-vert:hover {
+  cursor: pointer;
+  background-color: hsl(171, 49%, 60%);
+}
+.btn-blue {
+  background-color: hsl(233, 100%, 69%);
+}
+.btn-blue:hover {
+  cursor: pointer;
+  background-color: hsl(233, 80%, 80%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+main section {
+  width: 100%;
+  margin: 30px auto;
+}
+main section h2 {
+  margin: 0 auto 20px;
+  font-size: 32px;
+  width: 40%;
+}
+main section h2, main section h3, main section h4 {
+  color: hsl(210, 10%, 33%);
+}
+main section p {
+  color: hsl(201, 11%, 66%);
+}
+main section > p {
+  width: 40%;
+  margin: auto;
+}
+main section:nth-child(2) {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main section:nth-child(2) > div {
+  width: 50%;
+}
+main section:nth-child(2) > div img {
+  width: 105%;
+  float: left;
+  margin-left: -40px;
+}
+main section:nth-child(2) > div div {
+  width: 60%;
+  margin: 50px auto 50px 10%;
+  text-align: left;
+}
+main section:nth-child(2) > div div h3 {
+  margin-bottom: 10px;
+}
+main section:nth-child(3) {
+  margin-top: 80px;
+}
+main section:nth-child(3) img {
+  width: 50%;
+  margin-top: 80px;
+}
+main section:nth-child(4) {
+  margin-top: 70px;
+}
+main section:nth-child(4) > div {
+  width: 85%;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main section:nth-child(4) > div > div {
+  width: 30%;
+}
+main section:nth-child(4) > div > div img {
+  height: 30px;
+}
+main section:nth-child(4) > div > div h4 {
+  margin: 30px auto 20px;
+}
+main section:nth-child(5) {
+  margin-top: 80px;
+}
+main section:nth-child(5) div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main section:last-child {
+  margin-top: 100px;
+}
+main section:last-child p {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: rgb(236, 236, 236);
+  flex-direction: column;
+  margin-top: 100px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  color: hsl(210, 10%, 33%);
+}
+footer > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > div > div:first-child {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+footer > div > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+}
+footer > div > div:first-child > div img {
+  width: 50px;
+}
+footer > div > div:last-child img {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 475px) {
+  header {
+    background-image: url(../images/bg-header-mobile.png);
+  }
+  header > div {
+    width: 90%;
+  }
+  header > div > div h1 {
+    font-size: 32px;
+  }
+  header > div > div p {
+    font-size: 16px;
+  }
+  header > div > div:last-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  header > div > div:last-child .btn {
+    margin-bottom: 20px;
+    padding: 12px 0;
+    width: 100%;
+  }
+  main section {
+    width: 90%;
+  }
+  main section h2 {
+    width: 100%;
+    font-size: 28px;
+  }
+  main section p {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+  }
+  main section:nth-child(2) {
+    flex-direction: column;
+  }
+  main section:nth-child(2) div {
+    width: 100%;
+  }
+  main section:nth-child(2) div img {
+    width: 100%;
+    margin: auto;
+  }
+  main section:nth-child(2) div div {
+    width: 100%;
+    margin: 50px auto;
+  }
+  main section:nth-child(2) div div h3 {
+    text-align: center;
+    font-size: 24px;
+  }
+  main section:nth-child(3) img {
+    width: 100%;
+  }
+  main section:nth-child(4) > div {
+    width: 100%;
+    flex-direction: column;
+  }
+  main section:nth-child(4) > div > div {
+    width: 100%;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  main section:nth-child(5) {
+    margin-top: 20px;
+  }
+  main section:nth-child(5) div {
+    flex-direction: column;
+  }
+  main section:nth-child(5) div img {
+    width: 40%;
+    margin: 30px auto;
+  }
+  main section:last-child > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  main section:last-child > div .btn {
+    padding: 12px auto;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  footer {
+    height: auto;
+    text-align: center;
+  }
+  footer > div {
+    width: 100%;
+    flex-direction: column;
+  }
+  footer > div > div:first-child {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer > div > div:first-child > div {
+    width: 100%;
+  }
+  footer > div > div:first-child > div > div {
+    margin-bottom: 20px;
+  }
+  footer > div > div:first-child img {
+    margin: 40px auto;
+    width: 40px;
+  }
+  footer > div > div:last-child {
+    margin: 30px auto;
+  }
+  footer > div > div:last-child img {
+    margin: auto 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
